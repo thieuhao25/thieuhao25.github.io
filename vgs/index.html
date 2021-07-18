@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./plugins/owlcarousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./plugins/owlcarousel/css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+</style>
+</head>
+<body>
+
+
+  <div  class="header">
+    <!-- header menu -->
+    <div class="header-menu bg-dark">
+      <div class="container">
+
+        <nav class="navbar navbar-expand-sm p-0">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">
+            <img src="https://www.vietguys.biz/wp-content/themes/vietguys-new/framework/images/logo.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto nav-cus">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Services
+                </a>
+                <div class="dropdown-menu dropdown-services-cus">
+                    <ul class="navbar-nav dropdown-menu-child text-center">
+                      <li class="dropdown-item">
+                        <a class="nav-link text-uppercase" href="#">Group Service 1</a>
+                        <a class="nav-link menu-service-child" href="#">Service 1</a>
+                        <a class="nav-link menu-service-child" href="#">Service 2</a>
+                        <a class="nav-link menu-service-child" href="#">Service 3</a>
+                        <a class="nav-link" href="#">Service 4</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link text-uppercase" href="#">Group Service 2</a>
+                        <a class="nav-link menu-service-child" href="#">Service 1</a>
+                        <a class="nav-link menu-service-child" href="#">Service 2</a>
+                        <a class="nav-link menu-service-child" href="#">Service 3</a>
+                        <a class="nav-link" href="#">Service 4</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link text-uppercase" href="#">Group Service 3</a>
+                        <a class="nav-link menu-service-child" href="#">Service 1</a>
+                        <a class="nav-link menu-service-child" href="#">Service 2</a>
+                        <a class="nav-link menu-service-child" href="#">Service 3</a>
+                        <a class="nav-link" href="#">Service 4</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link text-uppercase" href="#">Group Service 4</a>
+                        <a class="nav-link menu-service-child" href="#">Service 1</a>
+                        <a class="nav-link menu-service-child" href="#">Service 2</a>
+                        <a class="nav-link menu-service-child" href="#">Service 3</a>
+                        <a class="nav-link" href="#">Service 4</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link text-uppercase" href="#">Group Service 5</a>
+                        <a class="nav-link menu-service-child" href="#">Service 1</a>
+                        <a class="nav-link menu-service-child" href="#">Service 2</a>
+                        <a class="nav-link menu-service-child" href="#">Service 3</a>
+                        <a class="nav-link" href="#">Service 4</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link text-uppercase" href="#">Group Service 6</a>
+                        <a class="nav-link menu-service-child" href="#">Service 1</a>
+                        <a class="nav-link menu-service-child" href="#">Service 2</a>
+                        <a class="nav-link menu-service-child" href="#">Service 3</a>
+                        <a class="nav-link" href="#">Service 4</a>
+                      </li>
+                    </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Case Study</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Join Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="lang-active lang">VI</span><span class="lang">EN</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- end header menu -->
+
+    <!-- banner -->
+    <div class="header-banner">
+      <div class="banner-carousel slider-carousel owl-carousel owl-loaded">
+        <div class="owl-stage-outer owl-stage-outer-header">
+          <div class="owl-stage">
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/la.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/chicago.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End header banner  -->
+  </div>
+
+  <!-- gioi thieu -->
+  <div class="greeting">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 p-1 p-md-3 d-flex justify-content-center align-items-center">
+          <div>
+            <h4 class="text-black font-weight-bold t">Giới thiệu</h4>
+            <p class="text-justify">
+              VietGuys (Công ty Cổ phần Xích Việt) được thành lập vào tháng 06/2007 bởi các thành viên giàu kinh nghiệm và nhiệt huyết với ngành quảng cáo và giải pháp tiếp thị trên điện thoại di động. 
+              Qua hơn 13 năm hình thành và phát triển, VietGuys tự hào là một trong các đơn vị tiên phong tại Việt Nam cung cấp các giải pháp Mobile Marketing cho hơn 1.800 nhãn hàng trong và ngoài nước như Samsung, LG, SSI, HSBC, Thegioididong, CGV, Garena, Grab, Shopee…
+            </p>
+            <div class="text-center">
+              <button type="button" class="btn-contact">Liên hệ ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 p-1 p-md-3 d-flex justify-content-center align-items-center">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Uwvvc51JLrk" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end gioi thieu  -->
+
+  <!-- why -->
+  <div class="why m-1 m-md-0 p-1 p-md-3" style="background-color: #7cb767;color: #fff;">
+    <div class="container">
+      <h4 class="text-center font-weight-bold">Vì sao lựa chọn VietGuys ?</h4>
+      <div class="row">
+        <div class="col-md-6 row">
+          <div class="col-md-4 text-center">
+            <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/Icon_KN2.png" alt="">
+            <p class="mb-0 font-weight-bold why-amount"><span data-toggle="counter-up">14</span>+</p>
+            <span>Năm kinh nghiệm</span>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/brand2.png" alt="">
+            <p class="mb-0 font-weight-bold why-amount"><span data-toggle="counter-up">2000</span>+</p>
+            <span>Nhãn hàng</span>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/Email-02.png" alt="">
+            <p class="mb-0 font-weight-bold why-amount"><span data-toggle="">5 triệu</span>+</p>
+            <span>Sản lượng SMS & Email mỗi ngày</span>
+          </div>
+        </div>
+        <div class="col-md-6 text-justify align-items-center d-flex">
+          <span>
+            <span class="font-weight-bold">VietGuys</span> là một trong số ít các công ty quảng cáo sở hữu chứng chỉ ISO 27001:2013 về An ninh thông tin do tổ chức Bureau Veritas đánh giá và UKAS cấp chứng nhận. Bên cạnh đó, VietGuys được Bộ Thông Tin – Truyền Thông cấp chứng chỉ hành nghề VNCERT cho lĩnh vực quảng cáo SMS và Email Marketing. VietGuys hiện là thành viên tích cực của Hiệp Hội Mobile Marketing toàn cầu (MMA), là thành viên của Hiệp Hội Thương mại Điện tử Việt Nam (VECOM), Hiệp hội Internet Việt Nam (VIA), và Phòng thương mại Châu Âu tại Việt Nam (Eurocharm).
+          </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- end why  -->
+
+  <!-- services  -->
+  <div class="services">
+    <div class="container p-1 p-md-3">
+      <h4 class="text-center font-weight-bold mb-1 mb-md-3 mt-1 mt-md-5 text-uppercase">Dịch vụ của chúng tôi</h4>
+      <div class="service-slider slider-carousel owl-carousel owl-loaded">
+        <div class="owl-stage-outer owl-stage-outer-header">
+          <div class="owl-stage">
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/la.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/chicago.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
+              <div class="container d-flex align-items-center justify-content-center text-white" >
+                <div class="text-center bg-grey banner-content">
+                  <h4 class="text-success">VIETGUYS J.S.C </h4>
+                  <span>MOBILE MARKETING SOLUTIONS</span><br>
+                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
+                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn-contact">Tìm hiểu thêm</button>
+      </div>
+    </div>
+  </div>
+  <!-- end service -->
+
+  <!-- customer -->
+  <div class="customer">
+    <div class="container">
+      <h4 class="text-center font-weight-bold mb-1 mb-md-3 mt-1 mt-md-5 text-uppercase">Khách hàng tiêu biểu</h4>
+      <div class="service-slider-mobile slider-carousel owl-carousel owl-loaded d-block d-sm-none">
+        <div class="owl-stage-outer owl-stage-outer-header">
+          <div class="owl-stage">
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/lovite.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/lifebuoy-logo.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/The_Face_Shop-logo.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/Korea-Life-Insurance.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/diageo.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-slider slider-carousel owl-carousel owl-loaded d-none d-sm-block">
+        <div class="owl-stage-outer owl-stage-outer-header">
+          <div class="owl-stage">
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/lovite.jpg" alt="">
+                </div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/lifebuoy-logo.jpg" alt="">
+                </div>
+              </div>
+              
+            </div>
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/The_Face_Shop-logo.jpg" alt="">
+                </div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/Korea-Life-Insurance.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/diageo.jpg" alt="">
+                </div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/jwk.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/unilever.jpg" alt="">
+                </div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/samsung.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/kronenbourg.jpg" alt="">
+                </div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/friso.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/Syngenta_Logo.jpg" alt="">
+                </div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/anz.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/capitaland-1.png" alt="">
+                </div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/adidas-1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item d-flex justify-content-center">
+              <div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/castrol-1.png" alt="">
+                </div>
+                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
+                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/the-gioi-di-don-1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn-contact">Tìm hiểu thêm</button>
+      </div>
+    </div>
+  </div>
+  <!-- end customer -->
+
+</body>
+<script src="./plugins/owlcarousel/js/owl.carousel.js"></script>
+<script src="./plugins/counterup/counterup.min.js"></script>
+<script src="./plugins/waypoints/jquery.waypoints.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".banner-carousel").owlCarousel({
+      loop:true,
+      margin:50,
+      nav:true,
+      navText: ['<i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>','<i class="fa fa-3x fa-caret-right" aria-hidden="true"></i>'],
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+    });
+    $(".service-slider").owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      navText: ['<i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>','<i class="fa fa-3x fa-caret-right" aria-hidden="true"></i>'],
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:4
+          }
+      }
+    });
+    $(".service-slider-mobile").owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      navText: ['<i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>','<i class="fa fa-3x fa-caret-right" aria-hidden="true"></i>'],
+      responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:4
+          }
+      }
+    });
+    $('[data-toggle="counter-up"]').counterUp({
+      delay: 10,
+      time: 1000
+    });
+});
+</script>
+</html>
