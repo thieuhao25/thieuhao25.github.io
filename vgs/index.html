@@ -3,11 +3,14 @@
 <head>
   <title>Home | VietGuys</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+
+  <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/jquery3_5_1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./plugins/bootstrap/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="./plugins/owlcarousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="./plugins/owlcarousel/css/owl.theme.default.min.css">
@@ -29,13 +32,13 @@
 
   <div  class="header">
     <!-- header menu -->
-    <div class="header-menu bg-dark">
+    <div id="header-menu" class="header-menu bg-dark">
       <div class="container">
 
         <nav class="navbar navbar-expand-sm p-0">
           <!-- Brand -->
           <a class="navbar-brand" href="#">
-            <img src="https://www.vietguys.biz/wp-content/themes/vietguys-new/framework/images/logo.png" alt="">
+            <img class="logo" src="./images/logo.png" alt="">
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -46,10 +49,10 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto nav-cus">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Homepage</a>
+                <a class="nav-link active" href="index.html">Homepage</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="./pages/about-us.html">About Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -134,7 +137,7 @@
       <div class="banner-carousel slider-carousel owl-carousel owl-loaded">
         <div class="owl-stage-outer owl-stage-outer-header">
           <div class="owl-stage">
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/la.jpg);">
+            <div class="owl-item" style="background-image: url(./images/banner-1.jpeg);">
               <div class="container d-flex align-items-center justify-content-center text-white" >
                 <div class="text-center bg-grey banner-content">
                   <h4 class="text-success">VIETGUYS J.S.C </h4>
@@ -144,7 +147,7 @@
                 </div>
               </div>
             </div>
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/chicago.jpg);">
+            <div class="owl-item" style="background-image: url(./images/banner-2.jpeg);">
               <div class="container d-flex align-items-center justify-content-center text-white" >
                 <div class="text-center bg-grey banner-content">
                   <h4 class="text-success">VIETGUYS J.S.C </h4>
@@ -154,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
+            <div class="owl-item" style="background-image: url(./images/banner-1.jpeg);">
               <div class="container d-flex align-items-center justify-content-center text-white" >
                 <div class="text-center bg-grey banner-content">
                   <h4 class="text-success">VIETGUYS J.S.C </h4>
@@ -177,7 +180,7 @@
       <div class="row">
         <div class="col-md-6 p-1 p-md-3 d-flex justify-content-center align-items-center">
           <div>
-            <h4 class="text-black font-weight-bold t">Giới thiệu</h4>
+            <h4 class="text-black font-weight-bold text-uppercase">Giới thiệu</h4>
             <p class="text-justify">
               VietGuys (Công ty Cổ phần Xích Việt) được thành lập vào tháng 06/2007 bởi các thành viên giàu kinh nghiệm và nhiệt huyết với ngành quảng cáo và giải pháp tiếp thị trên điện thoại di động. 
               Qua hơn 13 năm hình thành và phát triển, VietGuys tự hào là một trong các đơn vị tiên phong tại Việt Nam cung cấp các giải pháp Mobile Marketing cho hơn 1.800 nhãn hàng trong và ngoài nước như Samsung, LG, SSI, HSBC, Thegioididong, CGV, Garena, Grab, Shopee…
@@ -200,21 +203,21 @@
   <!-- why -->
   <div class="why m-1 m-md-0 p-1 p-md-3" style="background-color: #7cb767;color: #fff;">
     <div class="container">
-      <h4 class="text-center font-weight-bold">Vì sao lựa chọn VietGuys ?</h4>
+      <h4 class="text-center font-weight-bold text-uppercase">Vì sao lựa chọn VietGuys ?</h4>
       <div class="row">
-        <div class="col-md-6 row">
-          <div class="col-md-4 text-center">
-            <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/Icon_KN2.png" alt="">
+        <div class="col-md-6 row mx-0 px-0">
+          <div class="col-4 text-center">
+            <img class="mw-100" src="./images/Icon_KN2.png" alt="">
             <p class="mb-0 font-weight-bold why-amount"><span data-toggle="counter-up">14</span>+</p>
             <span>Năm kinh nghiệm</span>
           </div>
-          <div class="col-md-4 text-center">
-            <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/brand2.png" alt="">
+          <div class="col-4 text-center">
+            <img class="mw-100"  src="./images/brand2.png" alt="">
             <p class="mb-0 font-weight-bold why-amount"><span data-toggle="counter-up">2000</span>+</p>
             <span>Nhãn hàng</span>
           </div>
-          <div class="col-md-4 text-center">
-            <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/Email-02.png" alt="">
+          <div class="col-4 text-center">
+            <img class="mw-100" src="./images/Email-02.png" alt="">
             <p class="mb-0 font-weight-bold why-amount"><span data-toggle="">5 triệu</span>+</p>
             <span>Sản lượng SMS & Email mỗi ngày</span>
           </div>
@@ -237,70 +240,54 @@
       <div class="service-slider slider-carousel owl-carousel owl-loaded">
         <div class="owl-stage-outer owl-stage-outer-header">
           <div class="owl-stage">
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/la.jpg);">
-              <div class="container d-flex align-items-center justify-content-center text-white" >
-                <div class="text-center bg-grey banner-content">
-                  <h4 class="text-success">VIETGUYS J.S.C </h4>
-                  <span>MOBILE MARKETING SOLUTIONS</span><br>
-                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
-                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
+            <div class="owl-item dropdown">
+              <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2 dropdown-toggle" data-toggle="dropdown">
+                GROUP 1
+              </div>
+              <div class="service-child dropdown-menu">
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                  Service 1
+                </div>
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                  Service 2
+                </div>
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                  Service 3
+                </div>
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                  Service 4
                 </div>
               </div>
             </div>
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/chicago.jpg);">
-              <div class="container d-flex align-items-center justify-content-center text-white" >
-                <div class="text-center bg-grey banner-content">
-                  <h4 class="text-success">VIETGUYS J.S.C </h4>
-                  <span>MOBILE MARKETING SOLUTIONS</span><br>
-                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
-                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
-                </div>
+            <div class="owl-item">
+              <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                GROUP 2
               </div>
             </div>
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
-              <div class="container d-flex align-items-center justify-content-center text-white" >
-                <div class="text-center bg-grey banner-content">
-                  <h4 class="text-success">VIETGUYS J.S.C </h4>
-                  <span>MOBILE MARKETING SOLUTIONS</span><br>
-                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
-                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
-                </div>
+            <div class="owl-item" >
+              <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                GROUP 3
               </div>
             </div>
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
-              <div class="container d-flex align-items-center justify-content-center text-white" >
-                <div class="text-center bg-grey banner-content">
-                  <h4 class="text-success">VIETGUYS J.S.C </h4>
-                  <span>MOBILE MARKETING SOLUTIONS</span><br>
-                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
-                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
-                </div>
+            <div class="owl-item">
+              <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                GROUP 4
               </div>
             </div>
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
-              <div class="container d-flex align-items-center justify-content-center text-white" >
-                <div class="text-center bg-grey banner-content">
-                  <h4 class="text-success">VIETGUYS J.S.C </h4>
-                  <span>MOBILE MARKETING SOLUTIONS</span><br>
-                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
-                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
-                </div>
+            <div class="owl-item" >
+              <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                GROUP 5
               </div>
             </div>
-            <div class="owl-item" style="background-image: url(https://www.w3schools.com/bootstrap/ny.jpg);">
-              <div class="container d-flex align-items-center justify-content-center text-white" >
-                <div class="text-center bg-grey banner-content">
-                  <h4 class="text-success">VIETGUYS J.S.C </h4>
-                  <span>MOBILE MARKETING SOLUTIONS</span><br>
-                  <span>Sự thành công của khách hàng là động lực cho sự phát triển của chúng tôi</span><br>
-                  <a href="#" class="text-success"><u>Tìm hiểu thêm</u></a>
-                </div>
+            <div class="owl-item">
+              <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2" >
+                GROUP 6
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="text-center">
+      <div class="text-center mt-2 mt-md-4">
         <button type="button" class="btn-contact">Tìm hiểu thêm</button>
       </div>
     </div>
@@ -308,208 +295,109 @@
   <!-- end service -->
 
   <!-- customer -->
-  <div class="customer">
-    <div class="container">
+  <div class="services">
+    <div class="container p-1 p-md-3">
       <h4 class="text-center font-weight-bold mb-1 mb-md-3 mt-1 mt-md-5 text-uppercase">Khách hàng tiêu biểu</h4>
-      <div class="service-slider-mobile slider-carousel owl-carousel owl-loaded d-block d-sm-none">
+      <div class="service-slider slider-carousel owl-carousel owl-loaded">
         <div class="owl-stage-outer owl-stage-outer-header">
           <div class="owl-stage">
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/lovite.jpg" alt="">
+            <div class="owl-item">
+              <div class="text-center" >
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  TMDT
+                </div>
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  LOGO KH
                 </div>
               </div>
             </div>
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/lifebuoy-logo.jpg" alt="">
+            <div class="owl-item">
+              <div class="text-center" >
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  BANKING
+                </div>
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  LOGO KH
                 </div>
               </div>
             </div>
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/The_Face_Shop-logo.jpg" alt="">
+            <div class="owl-item" >
+              <div class="text-center" >
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  MAIL
+                </div>
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  LOGO KH
                 </div>
               </div>
             </div>
-            
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/Korea-Life-Insurance.jpg" alt="">
+            <div class="owl-item">
+              <div class="text-center" >
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  FASHION
+                </div>
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  LOGO KH
                 </div>
               </div>
             </div>
-            
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/diageo.jpg" alt="">
+            <div class="owl-item" >
+              <div class="text-center" >
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  TMDT
+                </div>
+                <div class="text-center border border-secondary rounded px-md-5 py-md-3 m-1 mx-md-5 my-md-2">
+                  LOGO KH
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="service-slider slider-carousel owl-carousel owl-loaded d-none d-sm-block">
-        <div class="owl-stage-outer owl-stage-outer-header">
-          <div class="owl-stage">
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/lovite.jpg" alt="">
-                </div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/lifebuoy-logo.jpg" alt="">
-                </div>
-              </div>
-              
-            </div>
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/The_Face_Shop-logo.jpg" alt="">
-                </div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/Korea-Life-Insurance.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/diageo.jpg" alt="">
-                </div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/jwk.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/unilever.jpg" alt="">
-                </div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/samsung.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/kronenbourg.jpg" alt="">
-                </div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/friso.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/Syngenta_Logo.jpg" alt="">
-                </div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/11/anz.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/capitaland-1.png" alt="">
-                </div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/adidas-1.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="owl-item d-flex justify-content-center">
-              <div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/castrol-1.png" alt="">
-                </div>
-                <div style="height: 50px;" class="align-items-center d-flex justify-content-center">
-                  <img src="https://www.vietguys.biz/wp-content/uploads/2017/12/the-gioi-di-don-1.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center">
+      <div class="text-center mt-2 mt-md-4">
         <button type="button" class="btn-contact">Tìm hiểu thêm</button>
       </div>
     </div>
   </div>
   <!-- end customer -->
 
+
+  <!-- footer  -->
+<div class="footer p-1 pb-md-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 " style="height: 200px;">
+        <div class="border border-secondary h-100" ></div>
+      </div>
+      <div class="col-md-3">
+        <div class="border border-secondary h-100  d-flex justify-content-center align-items-center">
+          THÔNG TIN CÔNG TY
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border border-secondary d-flex justify-content-center align-items-center h-75">
+          HƯỚNG DẪN
+        </div>
+        <div class="border border-secondary d-flex justify-content-center align-items-center mt-2 mt-md-4">
+          LOGO CÁC KÊNH SOCIAL
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border border-secondary d-flex justify-content-center align-items-center h-75">
+          Contact form
+        </div>
+        <div class="text-center mt-2">
+          <button type="button" class="btn-contact">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- end footer  -->
+
 </body>
 <script src="./plugins/owlcarousel/js/owl.carousel.js"></script>
 <script src="./plugins/counterup/counterup.min.js"></script>
 <script src="./plugins/waypoints/jquery.waypoints.js"></script>
-<script>
-  $(document).ready(function(){
-    $(".banner-carousel").owlCarousel({
-      loop:true,
-      margin:50,
-      nav:true,
-      navText: ['<i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>','<i class="fa fa-3x fa-caret-right" aria-hidden="true"></i>'],
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:1
-          },
-          1000:{
-              items:1
-          }
-      }
-    });
-    $(".service-slider").owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      navText: ['<i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>','<i class="fa fa-3x fa-caret-right" aria-hidden="true"></i>'],
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:1
-          },
-          1000:{
-              items:4
-          }
-      }
-    });
-    $(".service-slider-mobile").owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      navText: ['<i class="fa fa-3x fa-caret-left" aria-hidden="true"></i>','<i class="fa fa-3x fa-caret-right" aria-hidden="true"></i>'],
-      responsive:{
-          0:{
-              items:2
-          },
-          600:{
-              items:2
-          },
-          1000:{
-              items:4
-          }
-      }
-    });
-    $('[data-toggle="counter-up"]').counterUp({
-      delay: 10,
-      time: 1000
-    });
-});
-</script>
+<script src="./js/frontend.js"></script>
 </html>
